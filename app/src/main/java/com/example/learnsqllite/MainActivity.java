@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-       /* dt.Them(m_tk.getText()+"",m_mk.getText()+"");
-        Toast.makeText(this,"Them Thanh Cong", Toast.LENGTH_LONG).show();*/
+       dt.Them(m_tk.getText()+"",m_mk.getText()+"");
+        Toast.makeText(this,"Them Thanh Cong", Toast.LENGTH_LONG).show();
         ArrayAdapter<TK> adapTK =new ArrayAdapter<TK>(this, R.layout.support_simple_spinner_dropdown_item, dt.Show());
         m_list.setAdapter(adapTK);
         adapTK.notifyDataSetChanged();

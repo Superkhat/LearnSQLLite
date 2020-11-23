@@ -60,7 +60,7 @@ public class data extends SQLiteOpenHelper {
             TK m_tk = new TK();
         m_tk.tk = m_cursor.getString(m_cursor.getColumnIndex("tk"));
         m_tk.mk = m_cursor.getString(m_cursor.getColumnIndex("mk"));
-            Toast.makeText(m_context,"tk =  " + m_tk.tk,Toast.LENGTH_LONG).show();
+            /*Toast.makeText(m_context,"tk =  " + m_tk.tk,Toast.LENGTH_LONG).show();*/
         L_tk.add(m_tk);
         m_cursor.moveToNext();
         }

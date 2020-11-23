@@ -30,10 +30,22 @@
         android:layout_height="wrap_content"
         android:text="Button" />
 
-    <ListView
-        android:id="@+id/list"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+    </ScrollView>
+
+
 
 
 </LinearLayout>
